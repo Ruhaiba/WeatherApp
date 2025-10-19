@@ -1,0 +1,6 @@
+pandas
+sqlite3
+streamlit
+requests
+datetime
+uuid
