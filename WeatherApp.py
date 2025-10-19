@@ -8,7 +8,7 @@ import uuid
 if "user_id" not in st.session_state:
     st.session_state.user_id = str(uuid.uuid4()) #unique user id for each user
 
-#Setting up our database using sqlite3
+#Setting up my database using sqlite3
 weather_data = sqlite3.connect(f"weather_data_{st.session_state.user_id}.db")
 cur = weather_data.cursor()
 
@@ -99,4 +99,5 @@ st.write("Streamlit and sqlite3. I hope this application will be of assist")
 st.write("Thanks for using WeatherApp!")
 
     
+
 
